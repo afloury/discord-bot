@@ -14,7 +14,6 @@ const bot = new commando.Client()
 
 bot.registry.registerGroup('random', 'Random')
 bot.registry.registerGroup('time', 'Time')
-bot.registry.registerGroup('time', 'Pause')
 bot.registry.registerDefaults()
 bot.registry.registerCommandsIn(__dirname + "/commands")
 
