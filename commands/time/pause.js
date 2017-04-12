@@ -10,7 +10,7 @@ class PauseCommand extends commando.Command {
     }
 
     async run(message, args) {
-        var d = new Date()
+        /*var d = new Date()
         var hours = d.getHours()
         var min = d.getMinutes()
         var sec = d.getSeconds()
@@ -18,7 +18,7 @@ class PauseCommand extends commando.Command {
             message.reply("La journée est déjà fini bolosse !")
         } else if (hours > 15 || (hours == 15 && min > 45)) {
             message.reply("Il n'y a plus de pause aujourd'hui !")
-        } else if (hours == 15 && min > 30 /*&& min < 45*/) {
+        } else if (hours == 15 && min > 30 && min < 45) {
             message.reply("On est actuellement en pause, elle fini dans " + (45 - min) + " minutes !")
         } else if (hours == 13 && min > 45 || hours > 13) {
             var hoursDisp = 15 - hours
@@ -73,7 +73,7 @@ class PauseCommand extends commando.Command {
             } else {
                 message.reply("La pause de midi est dans " + hoursDisp + "heures" + " et " + minDisp + "min !")
             }
-        } else if (hours == 10 && min > 15 /*&& min < 45*/) {
+        } else if (hours == 10 && min > 15 && min < 45) {
             message.reply("On est actuellement en pause, elle fini dans " + (30 - min) + " minutes !")
         } else if (hours == 8 && min > 15 || hours > 8) {
             var hoursDisp = (10 - hours)
@@ -82,9 +82,9 @@ class PauseCommand extends commando.Command {
             }
             console.log("hoursDisp = " + hoursDisp + " donc 10 - " + hours + " -1")
             var minDisp = 0
-            /*if (min < 45) {
+            if (min < 45) {
                 minDisp = min + 15
-            } else if (min >= 45) {*/
+            } else if (min >= 45) {
                 var temp = 60 - min
                 minDisp = temp + 15
             //}
@@ -95,7 +95,7 @@ class PauseCommand extends commando.Command {
             }
         } else {
             message.reply("Erreur, apprend à coder !")
-        }
+        }*/
 
     }
 }
