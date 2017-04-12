@@ -18,8 +18,10 @@ class TimeCommand extends commando.Command {
             message.reply("La journée est déjà fini bolosse !")
         } else {
             var hoursDisp = 17 - hours
+            console.log("hoursDisp = " + hoursDisp + " donc 10 - " + hours)
             if (min > 0) {
                 hoursDisp = hoursDisp - 1
+                console.log("hoursDisp = " + hoursDisp + " donc 10 - " + hours + " -1")
             }
             var minDisp = 0
             if (min < 30) {
