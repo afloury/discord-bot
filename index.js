@@ -17,4 +17,10 @@ bot.registry.registerGroup('time', 'Time')
 bot.registry.registerDefaults()
 bot.registry.registerCommandsIn(__dirname + "/commands")
 
-bot.login('MzAxMjc3MDc1OTU5MTg1NDA4.C87paA.pcmI0-1oOubuAKr3hBl7AnNPUAA')
+if(process.env.TOKEN) { 
+    bot.login(process.env.TOKEN)
+}
+else { 
+    console.log('Set token please !'); 
+}
+
