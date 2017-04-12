@@ -6,9 +6,8 @@ WORKDIR /app
 
 RUN git init
 RUN git remote add origin https://github.com/afloury/discord-bot.git
-ARG COMMIT
 RUN git fetch origin
-RUN git reset --hard $COMMIT
+RUN git reset --hard FETCH_HEAD
 
 RUN mkdir -p /app/{commands,node_modules}
 RUN npm install discord.js
