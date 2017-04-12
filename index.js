@@ -21,6 +21,6 @@ if(process.env.TOKEN) {
     bot.login(process.env.TOKEN)
 }
 else { 
-    console.log('Set token please !'); 
+    console.log('Set environment variable TOKEN please !'); 
 }
 
